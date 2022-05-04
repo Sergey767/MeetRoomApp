@@ -7,11 +7,10 @@
 
 import UIKit
 
-class AuthViewController: UIViewController {
+final class AuthViewController: UIViewController {
     
-    @IBOutlet weak var loginTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    
+    @IBOutlet private weak var loginTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
