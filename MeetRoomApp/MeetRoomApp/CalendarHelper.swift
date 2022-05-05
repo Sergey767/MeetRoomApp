@@ -12,9 +12,32 @@ class CalendarHelper {
     
     let calendar = Calendar.current
     
+    func plusMonth(date: Date) -> Date {
+        return calendar.date(byAdding: .month, value: 1, to: date) ?? Date()
+    }
+    
+    func minusMonth(date: Date) -> Date {
+        return calendar.date(byAdding: .month, value: -1, to: date) ?? Date()
+    }
+    
+    func daysInMonth(date: Date) -> Int {
+        let range = calendar.range(of: .day, in: .month, for: date)
+        return range?.count ?? 0
+    }
+    
     func dayOfMonth(date: Date) -> Int {
         let components = calendar.dateComponents([.day], from: date)
         return components.day ?? 0
+    }
+    
+    func firstOfMonth(date: Date) -> Date {
+        let components = calendar.dateComponents([.year, .month], from: date)
+        return calendar.date(from: components) ?? Date()
+    }
+    
+    func weekDay(date: Date) -> Int {
+        let components = calendar.dateComponents([.weekday], from: date)
+        return (components.weekday ?? 0) - 1
     }
     
     func timeString(date: Date) -> String {

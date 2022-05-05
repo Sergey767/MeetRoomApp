@@ -80,7 +80,7 @@ extension CalendarDailyViewController: UICollectionViewDelegate, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "calCell", for: indexPath) as! CalendarCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collCell", for: indexPath) as! CalendarCell
         
         let date = totalSquares[indexPath.item]
         cell.dayOfMonthLabel.text = String(CalendarHelper().dayOfMonth(date: date))
