@@ -17,8 +17,6 @@ class CalendarDailyViewController: UIViewController {
     
     var totalSquares = [Date]()
     
-    var selectedDate = Date()
-    
     override open var shouldAutorotate: Bool {
         return false
     }
@@ -27,7 +25,7 @@ class CalendarDailyViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationItem.leftBarButtonItem?.title = CalendarHelper().monthString(date: selectedDate)
-        
+
         setCellsView()
         setWeekView()
     }
@@ -45,6 +43,10 @@ class CalendarDailyViewController: UIViewController {
     @IBAction func nextWeek(_ sender: Any) {
         selectedDate = CalendarHelper().addDays(date: selectedDate, days: 7)
         setWeekView()
+    }
+    
+    @IBAction func unwindSegue( _ seg: UIStoryboardSegue) {
+        
     }
 
     func setCellsView() {
@@ -104,7 +106,7 @@ extension CalendarDailyViewController: UICollectionViewDelegate, UICollectionVie
 extension CalendarDailyViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Event().eventsForDate(date: selectedDate).count
+        Event().eventsForDate(date: selectedDate).count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -112,7 +114,7 @@ extension CalendarDailyViewController: UITableViewDelegate, UITableViewDataSourc
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID") as! EventCell
         let event = Event().eventsForDate(date: selectedDate)[indexPath.row]
         let eventName = event.name ?? ""
-        cell.eventLabel.text = eventName + " " + CalendarHelper().timeString(date: event.date ?? Date())
+        cell.eventLabel.text = eventName + "\n " + "Начало: " + CalendarHelper().timeString(date: event.startDate ?? Date()) + "\n " + "Конец: " + CalendarHelper().timeString(date: event.endDate ?? Date())
         return cell
     }
 }

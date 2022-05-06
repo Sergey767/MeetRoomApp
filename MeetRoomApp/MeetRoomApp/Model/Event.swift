@@ -13,12 +13,13 @@ class Event {
     
     var id: Int?
     var name: String?
-    var date: Date?
+    var startDate: Date?
+    var endDate: Date?
     
     func eventsForDate(date: Date) -> [Event] {
         var daysEvents = [Event]()
         for event in eventList {
-            if(Calendar.current.isDate(event.date ?? Date(), inSameDayAs:date)) {
+            if(Calendar.current.isDate(event.startDate ?? Date(), inSameDayAs: date)) {
                 daysEvents.append(event)
             }
         }

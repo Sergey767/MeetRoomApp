@@ -42,5 +42,9 @@ final class AuthViewController: UIViewController {
         alert.addAction(noButton)
         present(alert, animated: true, completion: nil)
     }
+    
+    @IBAction func unwind( _ seg: UIStoryboardSegue) {
+        
+    }
 }
 

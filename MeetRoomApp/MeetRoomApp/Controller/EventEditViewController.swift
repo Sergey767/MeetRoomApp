@@ -10,12 +10,16 @@ import UIKit
 class EventEditViewController: UIViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var startDatePicker: UIDatePicker!
+    @IBOutlet weak var endDatePicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        datePicker.date = selectedDate
+        startDatePicker.date = selectedDate
+        startDatePicker.minimumDate = Calendar.current.date(byAdding: .minute, value: 30, to: Date())
+        startDatePicker.maximumDate = Calendar.current.date(byAdding: .hour, value: 24, to: Date())
+        endDatePicker.date = selectedDate
     }
     
     @IBAction func saveAction(_ sender: Any) {
@@ -23,7 +27,8 @@ class EventEditViewController: UIViewController {
         let newEvent = Event()
         newEvent.id = eventList.count
         newEvent.name = nameTextField.text
-        newEvent.date = datePicker.date
+        newEvent.startDate = startDatePicker.date
+        newEvent.endDate = endDatePicker.date
         eventList.append(newEvent)
         navigationController?.popViewController(animated: true)
     }

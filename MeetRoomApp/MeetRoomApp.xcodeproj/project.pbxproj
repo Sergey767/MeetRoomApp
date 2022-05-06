@@ -22,6 +22,11 @@
 		999F76D1282328A800EF621A /* EventEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999F76D0282328A800EF621A /* EventEditViewController.swift */; };
 		999F76D5282328F700EF621A /* Info in Resources */ = {isa = PBXBuildFile; fileRef = 999F76D4282328F700EF621A /* Info */; };
 		999F76D72823294000EF621A /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999F76D62823294000EF621A /* CalendarCell.swift */; };
+		99B2FAE12825104A00A75D92 /* ListRoomsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2FAE02825104A00A75D92 /* ListRoomsTableViewController.swift */; };
+		99B2FAE3282510B700A75D92 /* RoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2FAE2282510B700A75D92 /* RoomModel.swift */; };
+		99B2FAE5282522CC00A75D92 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2FAE4282522CB00A75D92 /* RoomCell.swift */; };
+		99B2FAE828254CBD00A75D92 /* AddRoomsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2FAE728254CBD00A75D92 /* AddRoomsTableViewController.swift */; };
+		99B2FAEC28255D4600A75D92 /* DeleteRoomsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2FAEB28255D4600A75D92 /* DeleteRoomsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +46,11 @@
 		999F76D0282328A800EF621A /* EventEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEditViewController.swift; sourceTree = "<group>"; };
 		999F76D4282328F700EF621A /* Info */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Info; path = ../../../../.Trash/Info; sourceTree = "<group>"; };
 		999F76D62823294000EF621A /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		99B2FAE02825104A00A75D92 /* ListRoomsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRoomsTableViewController.swift; sourceTree = "<group>"; };
+		99B2FAE2282510B700A75D92 /* RoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomModel.swift; sourceTree = "<group>"; };
+		99B2FAE4282522CB00A75D92 /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
+		99B2FAE728254CBD00A75D92 /* AddRoomsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomsTableViewController.swift; sourceTree = "<group>"; };
+		99B2FAEB28255D4600A75D92 /* DeleteRoomsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRoomsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,21 +85,50 @@
 			children = (
 				997CEA48281DECF100F61E14 /* AppDelegate.swift */,
 				997CEA4A281DECF100F61E14 /* SceneDelegate.swift */,
-				997CEA4C281DECF100F61E14 /* AuthViewController.swift */,
-				997CEA5C281DFDCA00F61E14 /* CalendarDailyViewController.swift */,
 				999F76C82823288600EF621A /* CalendarHelper.swift */,
-				999F76CA2823289200EF621A /* DailyCell.swift */,
-				999F76CC2823289C00EF621A /* Event.swift */,
-				999F76D0282328A800EF621A /* EventEditViewController.swift */,
-				999F76CE282328A200EF621A /* EventCell.swift */,
-				999F76D62823294000EF621A /* CalendarCell.swift */,
-				9959823B28232F9E000A55B8 /* CalendarMonthViewController.swift */,
+				99B2FAED28257F5700A75D92 /* Controller */,
+				99B2FAEF28257FAD00A75D92 /* Model */,
 				997CEA4E281DECF100F61E14 /* Main.storyboard */,
 				997CEA51281DECF400F61E14 /* Assets.xcassets */,
 				997CEA53281DECF400F61E14 /* LaunchScreen.storyboard */,
 				999F76D4282328F700EF621A /* Info */,
 			);
 			path = MeetRoomApp;
+			sourceTree = "<group>";
+		};
+		99B2FAED28257F5700A75D92 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99B2FAEE28257F8000A75D92 /* Cell */,
+				997CEA4C281DECF100F61E14 /* AuthViewController.swift */,
+				999F76D0282328A800EF621A /* EventEditViewController.swift */,
+				9959823B28232F9E000A55B8 /* CalendarMonthViewController.swift */,
+				997CEA5C281DFDCA00F61E14 /* CalendarDailyViewController.swift */,
+				99B2FAE02825104A00A75D92 /* ListRoomsTableViewController.swift */,
+				99B2FAE728254CBD00A75D92 /* AddRoomsTableViewController.swift */,
+				99B2FAEB28255D4600A75D92 /* DeleteRoomsTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		99B2FAEE28257F8000A75D92 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				999F76CA2823289200EF621A /* DailyCell.swift */,
+				999F76CE282328A200EF621A /* EventCell.swift */,
+				999F76D62823294000EF621A /* CalendarCell.swift */,
+				99B2FAE4282522CB00A75D92 /* RoomCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		99B2FAEF28257FAD00A75D92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				999F76CC2823289C00EF621A /* Event.swift */,
+				99B2FAE2282510B700A75D92 /* RoomModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B2FAE12825104A00A75D92 /* ListRoomsTableViewController.swift in Sources */,
 				999F76C92823288600EF621A /* CalendarHelper.swift in Sources */,
 				999F76CB2823289200EF621A /* DailyCell.swift in Sources */,
 				997CEA5D281DFDCA00F61E14 /* CalendarDailyViewController.swift in Sources */,
@@ -172,9 +212,13 @@
 				999F76CF282328A200EF621A /* EventCell.swift in Sources */,
 				997CEA49281DECF100F61E14 /* AppDelegate.swift in Sources */,
 				999F76CD2823289C00EF621A /* Event.swift in Sources */,
+				99B2FAEC28255D4600A75D92 /* DeleteRoomsTableViewController.swift in Sources */,
 				999F76D1282328A800EF621A /* EventEditViewController.swift in Sources */,
+				99B2FAE5282522CC00A75D92 /* RoomCell.swift in Sources */,
 				997CEA4B281DECF100F61E14 /* SceneDelegate.swift in Sources */,
 				999F76D72823294000EF621A /* CalendarCell.swift in Sources */,
+				99B2FAE828254CBD00A75D92 /* AddRoomsTableViewController.swift in Sources */,
+				99B2FAE3282510B700A75D92 /* RoomModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
