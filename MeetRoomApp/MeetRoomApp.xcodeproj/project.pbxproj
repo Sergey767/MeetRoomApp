@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9959823C28232F9E000A55B8 /* CalendarMonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9959823B28232F9E000A55B8 /* CalendarMonthViewController.swift */; };
+		997CEA49281DECF100F61E14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997CEA48281DECF100F61E14 /* AppDelegate.swift */; };
+		997CEA4B281DECF100F61E14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997CEA4A281DECF100F61E14 /* SceneDelegate.swift */; };
+		997CEA4D281DECF100F61E14 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997CEA4C281DECF100F61E14 /* AuthViewController.swift */; };
+		997CEA50281DECF100F61E14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997CEA4E281DECF100F61E14 /* Main.storyboard */; };
+		997CEA52281DECF400F61E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 997CEA51281DECF400F61E14 /* Assets.xcassets */; };
+		997CEA55281DECF400F61E14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997CEA53281DECF400F61E14 /* LaunchScreen.storyboard */; };
+		997CEA5D281DFDCA00F61E14 /* CalendarDailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997CEA5C281DFDCA00F61E14 /* CalendarDailyViewController.swift */; };
+		999F76C92823288600EF621A /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999F76C82823288600EF621A /* CalendarHelper.swift */; };
+		999F76CB2823289200EF621A /* DailyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999F76CA2823289200EF621A /* DailyCell.swift */; };
+		999F76CD2823289C00EF621A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999F76CC2823289C00EF621A /* Event.swift */; };
+		999F76CF282328A200EF621A /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999F76CE282328A200EF621A /* EventCell.swift */; };
+		999F76D1282328A800EF621A /* EventEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999F76D0282328A800EF621A /* EventEditViewController.swift */; };
+		999F76D5282328F700EF621A /* Info in Resources */ = {isa = PBXBuildFile; fileRef = 999F76D4282328F700EF621A /* Info */; };
+		999F76D72823294000EF621A /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999F76D62823294000EF621A /* CalendarCell.swift */; };
+		99B2FAE12825104A00A75D92 /* ListRoomsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2FAE02825104A00A75D92 /* ListRoomsTableViewController.swift */; };
+		99B2FAE3282510B700A75D92 /* RoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2FAE2282510B700A75D92 /* RoomModel.swift */; };
+		99B2FAE5282522CC00A75D92 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2FAE4282522CB00A75D92 /* RoomCell.swift */; };
+		99B2FAE828254CBD00A75D92 /* AddRoomsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2FAE728254CBD00A75D92 /* AddRoomsTableViewController.swift */; };
+		99B2FAEC28255D4600A75D92 /* DeleteRoomsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2FAEB28255D4600A75D92 /* DeleteRoomsTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9959823B28232F9E000A55B8 /* CalendarMonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMonthViewController.swift; sourceTree = "<group>"; };
+		997CEA45281DECF100F61E14 /* MeetRoomApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetRoomApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		997CEA48281DECF100F61E14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		997CEA4A281DECF100F61E14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		997CEA4C281DECF100F61E14 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		997CEA4F281DECF100F61E14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		997CEA51281DECF400F61E14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		997CEA54281DECF400F61E14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		997CEA5C281DFDCA00F61E14 /* CalendarDailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDailyViewController.swift; sourceTree = "<group>"; };
+		999F76C82823288600EF621A /* CalendarHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
+		999F76CA2823289200EF621A /* DailyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyCell.swift; sourceTree = "<group>"; };
+		999F76CC2823289C00EF621A /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		999F76CE282328A200EF621A /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		999F76D0282328A800EF621A /* EventEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEditViewController.swift; sourceTree = "<group>"; };
+		999F76D4282328F700EF621A /* Info */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Info; path = ../../../../.Trash/Info; sourceTree = "<group>"; };
+		999F76D62823294000EF621A /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		99B2FAE02825104A00A75D92 /* ListRoomsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRoomsTableViewController.swift; sourceTree = "<group>"; };
+		99B2FAE2282510B700A75D92 /* RoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomModel.swift; sourceTree = "<group>"; };
+		99B2FAE4282522CB00A75D92 /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
+		99B2FAE728254CBD00A75D92 /* AddRoomsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomsTableViewController.swift; sourceTree = "<group>"; };
+		99B2FAEB28255D4600A75D92 /* DeleteRoomsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRoomsTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		997CEA42281DECF100F61E14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		997CEA3C281DECF100F61E14 = {
+			isa = PBXGroup;
+			children = (
+				997CEA47281DECF100F61E14 /* MeetRoomApp */,
+				997CEA46281DECF100F61E14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		997CEA46281DECF100F61E14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				997CEA45281DECF100F61E14 /* MeetRoomApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		997CEA47281DECF100F61E14 /* MeetRoomApp */ = {
+			isa = PBXGroup;
+			children = (
+				997CEA48281DECF100F61E14 /* AppDelegate.swift */,
+				997CEA4A281DECF100F61E14 /* SceneDelegate.swift */,
+				999F76C82823288600EF621A /* CalendarHelper.swift */,
+				99B2FAED28257F5700A75D92 /* Controller */,
+				99B2FAEF28257FAD00A75D92 /* Model */,
+				997CEA4E281DECF100F61E14 /* Main.storyboard */,
+				997CEA51281DECF400F61E14 /* Assets.xcassets */,
+				997CEA53281DECF400F61E14 /* LaunchScreen.storyboard */,
+				999F76D4282328F700EF621A /* Info */,
+			);
+			path = MeetRoomApp;
+			sourceTree = "<group>";
+		};
+		99B2FAED28257F5700A75D92 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99B2FAEE28257F8000A75D92 /* Cell */,
+				997CEA4C281DECF100F61E14 /* AuthViewController.swift */,
+				999F76D0282328A800EF621A /* EventEditViewController.swift */,
+				9959823B28232F9E000A55B8 /* CalendarMonthViewController.swift */,
+				997CEA5C281DFDCA00F61E14 /* CalendarDailyViewController.swift */,
+				99B2FAE02825104A00A75D92 /* ListRoomsTableViewController.swift */,
+				99B2FAE728254CBD00A75D92 /* AddRoomsTableViewController.swift */,
+				99B2FAEB28255D4600A75D92 /* DeleteRoomsTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		99B2FAEE28257F8000A75D92 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				999F76CA2823289200EF621A /* DailyCell.swift */,
+				999F76CE282328A200EF621A /* EventCell.swift */,
+				999F76D62823294000EF621A /* CalendarCell.swift */,
+				99B2FAE4282522CB00A75D92 /* RoomCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		99B2FAEF28257FAD00A75D92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				999F76CC2823289C00EF621A /* Event.swift */,
+				99B2FAE2282510B700A75D92 /* RoomModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		997CEA44281DECF100F61E14 /* MeetRoomApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 997CEA59281DECF400F61E14 /* Build configuration list for PBXNativeTarget "MeetRoomApp" */;
+			buildPhases = (
+				997CEA41281DECF100F61E14 /* Sources */,
+				997CEA42281DECF100F61E14 /* Frameworks */,
+				997CEA43281DECF100F61E14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeetRoomApp;
+			productName = MeetRoomApp;
+			productReference = 997CEA45281DECF100F61E14 /* MeetRoomApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		997CEA3D281DECF100F61E14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					997CEA44281DECF100F61E14 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 997CEA40281DECF100F61E14 /* Build configuration list for PBXProject "MeetRoomApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 997CEA3C281DECF100F61E14;
+			productRefGroup = 997CEA46281DECF100F61E14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				997CEA44281DECF100F61E14 /* MeetRoomApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		997CEA43281DECF100F61E14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999F76D5282328F700EF621A /* Info in Resources */,
+				997CEA55281DECF400F61E14 /* LaunchScreen.storyboard in Resources */,
+				997CEA52281DECF400F61E14 /* Assets.xcassets in Resources */,
+				997CEA50281DECF100F61E14 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		997CEA41281DECF100F61E14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B2FAE12825104A00A75D92 /* ListRoomsTableViewController.swift in Sources */,
+				999F76C92823288600EF621A /* CalendarHelper.swift in Sources */,
+				999F76CB2823289200EF621A /* DailyCell.swift in Sources */,
+				997CEA5D281DFDCA00F61E14 /* CalendarDailyViewController.swift in Sources */,
+				9959823C28232F9E000A55B8 /* CalendarMonthViewController.swift in Sources */,
+				997CEA4D281DECF100F61E14 /* AuthViewController.swift in Sources */,
+				999F76CF282328A200EF621A /* EventCell.swift in Sources */,
+				997CEA49281DECF100F61E14 /* AppDelegate.swift in Sources */,
+				999F76CD2823289C00EF621A /* Event.swift in Sources */,
+				99B2FAEC28255D4600A75D92 /* DeleteRoomsTableViewController.swift in Sources */,
+				999F76D1282328A800EF621A /* EventEditViewController.swift in Sources */,
+				99B2FAE5282522CC00A75D92 /* RoomCell.swift in Sources */,
+				997CEA4B281DECF100F61E14 /* SceneDelegate.swift in Sources */,
+				999F76D72823294000EF621A /* CalendarCell.swift in Sources */,
+				99B2FAE828254CBD00A75D92 /* AddRoomsTableViewController.swift in Sources */,
+				99B2FAE3282510B700A75D92 /* RoomModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		997CEA4E281DECF100F61E14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				997CEA4F281DECF100F61E14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		997CEA53281DECF400F61E14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				997CEA54281DECF400F61E14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		997CEA57281DECF400F61E14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		997CEA58281DECF400F61E14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		997CEA5A281DECF400F61E14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2753KP9756;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeetRoomApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Task-list.MeetRoomApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		997CEA5B281DECF400F61E14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2753KP9756;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeetRoomApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Task-list.MeetRoomApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		997CEA40281DECF100F61E14 /* Build configuration list for PBXProject "MeetRoomApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				997CEA57281DECF400F61E14 /* Debug */,
+				997CEA58281DECF400F61E14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		997CEA59281DECF400F61E14 /* Build configuration list for PBXNativeTarget "MeetRoomApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				997CEA5A281DECF400F61E14 /* Debug */,
+				997CEA5B281DECF400F61E14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 997CEA3D281DECF100F61E14 /* Project object */;
+}
