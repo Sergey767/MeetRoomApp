@@ -30,6 +30,17 @@ class EventEditViewController: UIViewController {
         newEvent.startDate = startDatePicker.date
         newEvent.endDate = endDatePicker.date
         eventList.append(newEvent)
+        
+        do {
+            let encoder = JSONEncoder()
+            let data = try encoder.encode(Event().eventsForDate(date: selectedDate))
+            
+            UserDefaults.standard.set(data, forKey: "myEventsKey")
+            UserDefaults.standard.synchronize()
+        } catch {
+            print("Unable to Encode Note (\(error))")
+        }
+        
         navigationController?.popViewController(animated: true)
     }
 }

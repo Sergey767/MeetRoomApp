@@ -9,7 +9,7 @@ import Foundation
 
 var eventList = [Event]()
 
-class Event {
+class Event: Codable {
     
     var id: Int?
     var name: String?

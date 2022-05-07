@@ -18,6 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="r4v-hT-3zd" kind="relationship" relationship="viewControllers" id="esJ-Lo-ZFc"/>
@@ -91,6 +93,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="P4P-bp-49A">
                                 <rect key="frame" x="267" y="11" width="92" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
                                 <connections>
@@ -187,6 +190,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="ntJ-no-Ckj">
                         <barButtonItem key="rightBarButtonItem" title="Add" style="plain" id="Ghy-DB-f05">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="1V5-gh-Ju3" kind="show" id="tHu-fS-ZdS"/>
                             </connections>
@@ -207,48 +211,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="0dz-Wh-vul" kind="relationship" relationship="rootViewController" id="Y0m-9b-T4w"/>
+                        <segue destination="XhN-9O-ZRT" kind="relationship" relationship="rootViewController" id="Aqf-NQ-EqA"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CXv-dh-BnU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="677" y="1017"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="xNm-bm-nAy">
-            <objects>
-                <tableViewController id="0dz-Wh-vul" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="wce-BS-Osi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ySW-hp-Fc7">
-                                <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ySW-hp-Fc7" id="NbZ-I2-Y0y">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="0dz-Wh-vul" id="uBV-Qy-bWH"/>
-                            <outlet property="delegate" destination="0dz-Wh-vul" id="xpl-Td-DQY"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="Wxs-IF-hjE">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="done" id="EtU-LM-rsc">
-                            <connections>
-                                <segue destination="nzE-24-r8B" kind="unwind" unwindAction="unwindSegue:" id="ebi-nf-kBx"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SNb-K6-CIs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="nzE-24-r8B" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="1712" y="1017"/>
         </scene>
         <!--Auth View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -355,6 +323,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4C-qh-1Md">
                                 <rect key="frame" x="244" y="79" width="131" height="31.5"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.right.circle.fill" catalog="system"/>
                                 <connections>
@@ -363,6 +332,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rpk-IC-UWa">
                                 <rect key="frame" x="0.0" y="-229" width="131" height="647.5"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.left.circle.fill" catalog="system"/>
                                 <connections>
@@ -527,13 +497,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="kYU-fq-7JR">
                         <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="xdB-5Z-an3">
-                            <color key="tintColor" systemColor="tintColor"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="siE-SQ-hPj" kind="show" id="ozB-yY-c6b"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem style="plain" systemItem="add" id="J3r-s4-WBc">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="dy1-cb-8Kc" kind="show" id="HfP-14-X8b"/>
                                 </connections>
@@ -573,6 +544,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMf-KL-2me">
                                 <rect key="frame" x="244" y="67" width="131" height="31.5"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.right.circle.fill" catalog="system"/>
                                 <connections>
@@ -581,6 +553,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axf-sh-D3q">
                                 <rect key="frame" x="0.0" y="-251" width="131" height="667.5"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.left.circle.fill" catalog="system"/>
                                 <connections>
@@ -703,7 +676,9 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="4oQ-2W-fWU">
                         <rightBarButtonItems>
-                            <barButtonItem style="plain" systemItem="add" id="mXf-4X-jNx"/>
+                            <barButtonItem style="plain" systemItem="add" id="mXf-4X-jNx">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
                             <barButtonItem image="smiley" catalog="system" style="plain" id="PXB-uJ-ekT">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -853,6 +828,55 @@
             </objects>
             <point key="canvasLocation" x="3878" y="236"/>
         </scene>
+        <!--My Events Table View Controller-->
+        <scene sceneID="gv7-xd-J29">
+            <objects>
+                <tableViewController modalPresentationStyle="fullScreen" id="XhN-9O-ZRT" customClass="MyEventsTableViewController" customModule="MeetRoomApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="CgU-gz-RdK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" rowHeight="71" id="m4O-da-a4a" customClass="EventCell" customModule="MeetRoomApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="375" height="71"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m4O-da-a4a" id="52z-5T-Pea">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9p-r6-a8a">
+                                            <rect key="frame" x="16" y="16" width="329" height="39"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="329" id="3oK-9x-HZm"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="L9p-r6-a8a" firstAttribute="centerY" secondItem="52z-5T-Pea" secondAttribute="centerY" id="Aqb-lD-feM"/>
+                                        <constraint firstItem="L9p-r6-a8a" firstAttribute="top" secondItem="52z-5T-Pea" secondAttribute="top" constant="16" id="P9K-V1-4Zi"/>
+                                        <constraint firstItem="L9p-r6-a8a" firstAttribute="leading" secondItem="52z-5T-Pea" secondAttribute="leading" constant="16" id="RQb-Ba-SCU"/>
+                                        <constraint firstAttribute="bottom" secondItem="L9p-r6-a8a" secondAttribute="bottom" constant="16" id="SRc-5m-g8U"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="eventLabel" destination="L9p-r6-a8a" id="KLZ-eE-Zxa"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XhN-9O-ZRT" id="jXg-95-Qg2"/>
+                            <outlet property="delegate" destination="XhN-9O-ZRT" id="XLh-fd-HS5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="8LY-cZ-opa"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w4d-3w-qkh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1709.5999999999999" y="1016.9415292353824"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="HMK-4s-7oH"/>
@@ -866,9 +890,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
