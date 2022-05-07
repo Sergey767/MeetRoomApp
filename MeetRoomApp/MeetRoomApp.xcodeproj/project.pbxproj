@@ -27,6 +27,7 @@
 		99B2FAE5282522CC00A75D92 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2FAE4282522CB00A75D92 /* RoomCell.swift */; };
 		99B2FAE828254CBD00A75D92 /* AddRoomsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2FAE728254CBD00A75D92 /* AddRoomsTableViewController.swift */; };
 		99B2FAEC28255D4600A75D92 /* DeleteRoomsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2FAEB28255D4600A75D92 /* DeleteRoomsTableViewController.swift */; };
+		99B2FAF12826C14000A75D92 /* MyEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2FAF02826C14000A75D92 /* MyEventsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		99B2FAE4282522CB00A75D92 /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
 		99B2FAE728254CBD00A75D92 /* AddRoomsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomsTableViewController.swift; sourceTree = "<group>"; };
 		99B2FAEB28255D4600A75D92 /* DeleteRoomsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRoomsTableViewController.swift; sourceTree = "<group>"; };
+		99B2FAF02826C14000A75D92 /* MyEventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				99B2FAE02825104A00A75D92 /* ListRoomsTableViewController.swift */,
 				99B2FAE728254CBD00A75D92 /* AddRoomsTableViewController.swift */,
 				99B2FAEB28255D4600A75D92 /* DeleteRoomsTableViewController.swift */,
+				99B2FAF02826C14000A75D92 /* MyEventsTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				99B2FAEC28255D4600A75D92 /* DeleteRoomsTableViewController.swift in Sources */,
 				999F76D1282328A800EF621A /* EventEditViewController.swift in Sources */,
 				99B2FAE5282522CC00A75D92 /* RoomCell.swift in Sources */,
+				99B2FAF12826C14000A75D92 /* MyEventsTableViewController.swift in Sources */,
 				997CEA4B281DECF100F61E14 /* SceneDelegate.swift in Sources */,
 				999F76D72823294000EF621A /* CalendarCell.swift in Sources */,
 				99B2FAE828254CBD00A75D92 /* AddRoomsTableViewController.swift in Sources */,

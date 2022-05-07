@@ -28,6 +28,7 @@ class CalendarDailyViewController: UIViewController {
 
         setCellsView()
         setWeekView()
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -114,7 +115,8 @@ extension CalendarDailyViewController: UITableViewDelegate, UITableViewDataSourc
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID") as! EventCell
         let event = Event().eventsForDate(date: selectedDate)[indexPath.row]
         let eventName = event.name ?? ""
-        cell.eventLabel.text = eventName + "\n " + "Начало: " + CalendarHelper().timeString(date: event.startDate ?? Date()) + "\n " + "Конец: " + CalendarHelper().timeString(date: event.endDate ?? Date())
+        cell.eventLabel.text = eventName + "\n" + "Начало: " + CalendarHelper().timeString(date: event.startDate ?? Date()) + "\n" + "Конец: " + CalendarHelper().timeString(date: event.endDate ?? Date())
+        
         return cell
     }
 }
